@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Ирина Чернышева](https://up.htmlacademy.ru/adaptive/23/user/1796361).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Беллавин](https://htmlacademy.ru/profile/bellavin).
 
 ---
 
