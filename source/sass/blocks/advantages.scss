@@ -1,0 +1,24 @@
+.advantages__box {
+  background-color: $basic-blue;
+  color: $basic-white;
+}
+
+.advantages__list {
+  @include reset-list;
+}
+
+.advantages__inner--grey {
+  background-color: $basic-super-grey;
+}
+
+.advantages__title {
+  @include font-1;
+}
+
+.advantages__desc {
+  @include font-2;
+}
+
+.advantages__title--blue {
+  color: $basic-white;
+}

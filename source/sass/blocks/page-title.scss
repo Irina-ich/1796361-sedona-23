@@ -1,0 +1,15 @@
+.page-title {
+  text-transform: uppercase;
+}
+
+.page-title__heading {
+  @include font-3;
+}
+
+.page-title__text {
+  @include font-5;
+}
+
+.main-nav__list {
+  @include reset-list;
+}
