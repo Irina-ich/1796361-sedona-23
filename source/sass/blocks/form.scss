@@ -1,0 +1,33 @@
+.form__text,
+.form__desc {
+  background-color: $basic-extra-grey;
+}
+
+.form__heading {
+  @include font-1;
+}
+
+.form__subtitle {
+  @include font-5;
+}
+
+.form__text,
+.form__grade,
+.form__desc {
+  @include font-1;
+  text-transform: none;
+}
+
+.form__btn {
+  @include font-3;
+  color: $basic-white;
+  background-color: $basic-blue;
+}
+
+.form__fieldset {
+  border: none;
+}
+
+.form__error {
+  @include font-4;
+}

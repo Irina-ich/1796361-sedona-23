@@ -1,0 +1,14 @@
+.photo__list {
+  @include reset-list;
+}
+
+.photo__text,
+.photo__number {
+  @include font-4;
+  font-weight: 700;
+}
+
+.photo__author {
+  @include font-4;
+  text-transform: none;
+}
