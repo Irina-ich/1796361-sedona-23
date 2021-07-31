@@ -1,10 +1,26 @@
 .advantages__box {
   background-color: $basic-blue;
   color: $basic-white;
+  text-align: center;
+  padding: 55px 12px 39px 13px;
+
+  &--small {
+    padding: 39px 16px 35px 15px;
+  }
 }
 
 .advantages__list {
   @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.advantages__inner {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
 }
 
 .advantages__inner--grey {
@@ -13,6 +29,10 @@
 
 .advantages__title {
   @include font-1;
+
+  @media (min-width: $tablet-width) {
+    @include font-3;
+  }
 }
 
 .advantages__desc {
@@ -21,4 +41,22 @@
 
 .advantages__title--blue {
   color: $basic-white;
+}
+
+.advantages__item {
+  padding-left: 69px;
+
+  @media (min-width: $tablet-width) {
+    &:nth-child(1) {
+      order: 0;
+    }
+
+    &:nth-child(2) {
+      order: 2;
+    }
+
+    &:nth-child(3) {
+      order: 1;
+    }
+  }
 }

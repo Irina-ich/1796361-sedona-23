@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="sourse/fonts" rel="stylesheet">
@@ -10,7 +11,8 @@
   <body class="page-body">
     <header class="page-header">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--current">
               <a class="main-nav__link" href="#">Главная</a>
@@ -30,12 +32,13 @@
               <a class="main-nav__link" href="https://htmlacademy.ru">HTML ACADEMY</a>
             </li>
           </ul>
+        </div>
       </nav>
       <div class="baner baner--home">
-        <img src="img/back.jpg.png" width="282" height="214" alt="Фото гор"/>
+        <img src="img/back.jpg.png" width="320" height="214" alt="Фото гор"/>
       </div>
       <div class="page-title">
-      <h1 class="page-title__heading">Cедона — небольшой<br> городок в аризоне,<br> заслуживающий большего!</h1>
+      <h1 class="page-title__heading">Cедона — небольшой городок в аризоне, заслуживающий большего!</h1>
       <p class="page-title__text">Рассмотрим 5 причин, по которым</p>
       <p class="page-title__text">седона круче, чем гранд каньон!</p>
       </div>
@@ -47,7 +50,7 @@
             <div class="advantages__box">
               <h3 class="advantages__title advantages__title--blue">Настоящий городок</h3>
               <p class="advantages__number">—№1—</p>
-              <p class="advantages__desc advantages__desc--blue">Седона — не атракцион для туристов, там <br>течёт своя жизнь</p>
+              <p class="advantages__desc advantages__desc--blue">Седона — не атракцион для туристов, там течёт своя жизнь</p>
             </div>
             <img src="img/photo-city@1x 1.png" width="320" height="260" alt="Фото города" />
           </div>
@@ -62,11 +65,11 @@
             </li>
             <li class="advantages__item">
               <h3 class="advantages__title">Еда</h3>
-              <p class="advantages__desc">Всегда заказывайте фирменный бургер, вы не<br> разочаруетесь!</p>
+              <p class="advantages__desc">Всегда заказывайте<br> фирменный бургер, вы не<br> разочаруетесь!</p>
             </li>
           </ul>
           <div class="advantages__inner">
-            <div class="advantages__box">
+            <div class="advantages__box advantages__box--small">
               <h3 class="advantages__title advantages__title--blue">Там есть мост&nbsp;дьявола</h3>
               <p class="advantages__number">—№2—</p>
               <p class="advantages__desc advantages__desc--blue">Да, по нему можно пройти, если вы  <br>осмелитесь конечно</p>
