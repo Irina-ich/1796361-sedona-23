@@ -5,10 +5,18 @@
 
 .form__heading {
   @include font-1;
+
+  @media (min-width: $tablet-width) {
+    @include font-3;
+  }
+
+  text-align: center;
 }
 
 .form__subtitle {
   @include font-5;
+
+  padding-right: 10px;
 }
 
 .form__text,
@@ -18,16 +26,78 @@
   text-transform: none;
 }
 
-.form__btn {
+.form__subtitle--desc {
+  padding-bottom: 8px;
+  padding-left: 42px;
+}
+
+.form__text--tel,
+.form__text--email {
+  padding-bottom: 14px;
+  width: 280px;
+  margin: 0 20px;
+}
+
+.form__text--email {
+  padding-top: 5px;
+  margin-bottom: 49px;
+}
+
+.form__heading--lion {
+  padding-top: 57px;
+}
+
+.form__button {
   @include font-3;
+
   color: $basic-white;
   background-color: $basic-blue;
+  border: none;
+  padding: 18px 33px 14px 32px;
+  margin: 51px 21px 48px 19px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+  }
 }
 
 .form__fieldset {
   border: none;
+
+  @include reset-list;
+
+  margin: 0;
+  padding: 0;
+}
+
+.form__login {
+  display: flex;
+  padding: 20px;
+  align-items: center;
 }
 
 .form__error {
   @include font-4;
+}
+
+.form__text {
+  border: none;
+  min-height: 58px;
+  padding: 0;
+  padding-left: 22px;
+}
+
+.form__heading--contact {
+  padding-top: 26px;
+  padding-bottom: 17px;
+}
+
+.form__contacts {
+  display: flex;
+  flex-direction: column;
 }

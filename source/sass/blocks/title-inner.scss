@@ -1,7 +1,25 @@
+.title-inner {
+  text-align: center;
+  padding: 31px 9px 43px 12px;
+
+  @media (min-width: $tablet-width) {
+    padding: 59px 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 101px 372px 66px 370px;
+  }
+}
+
 .title-inner__heading {
   @include font-1;
+
+  @media (min-width: $tablet-width) {
+    @include font-6;
+  }
 }
 
 .title-inner__text {
   @include font-4;
+  margin: 0;
 }

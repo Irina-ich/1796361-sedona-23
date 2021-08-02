@@ -25,6 +25,7 @@
 
 .page-title__text {
   @include font-5;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     display: inline;

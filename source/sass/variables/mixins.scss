@@ -39,3 +39,17 @@
   font-weight: 400;
   text-transform: uppercase;
 }
+
+@mixin font-6 {
+  font-size: 30px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@mixin font-7 {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}

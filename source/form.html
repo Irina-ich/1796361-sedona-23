@@ -32,17 +32,17 @@
             </li>
           </ul>
       </nav>
-      <div class="title-inner">
-        <h2 class="title-inner__heading">Оставьте свой отзыв</h2>
-        <p class="title-inner__text">Помогите нашим отелям стать лучше!</p>
-        <p class="title-inner__text">Оставьте отзыв о них,а также о</p>
-        <p class="title-inner__text">посещенных вами</p>
-        <p class="title-inner__text">достопримечательностях</p>
+      <div class="title-inner title-inner--form">
+        <h2 class="title-inner__heading title-inner__heading--form ">Оставьте свой отзыв</h2>
+        <p class="title-inner__text title-inner__text--form">Помогите нашим отелям стать лучше!</p>
+        <p class="title-inner__text title-inner__text-form">Оставьте отзыв о них,а также о</p>
+        <p class="title-inner__text title-inner__text-form">посещенных вами</p>
+        <p class="title-inner__text title-inner__text-form">достопримечательностях</p>
       </div>
     </header>
-    <main class="main-form">
-      <section class="container-review">
-        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+    <main class="form">
+      <section class="form__review">
+        <form class="form__box" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__fieldset">
             <legend class="form__heading">Представьтесь:</legend>
               <div class="form__login">
@@ -59,14 +59,14 @@
               </div>
           </fieldset>
           <fieldset class="form__fieldset">
-            <legend class="form__heading">Контактная информация:</legend>
+            <legend class="form__heading form__heading--contact">Контактная информация:</legend>
               <div class="form__contacts">
-                <label class="form__subtitle" for="tel">Контактный телефон*:</label>
-                <input class="form__text" id="tel" type="tel" name="tel" placeholder="Введите телефон" required>
+                <label class="form__subtitle form__subtitle--desc" for="tel">Контактный телефон*:</label>
+                <input class="form__text form__text--tel" id="tel" type="tel" name="tel" placeholder="Введите телефон" required>
               </div>
               <div class="form__contacts">
-                <label class="form__subtitle" for="email">Электронная почта*:</label>
-                <input class="form__text" id="email" type="email" name="email" placeholder="Введите e-mail" required>
+                <label class="form__subtitle form__subtitle--desc" for="email">Электронная почта*:</label>
+                <input class="form__text form__text--email" id="email" type="email" name="email" placeholder="Введите e-mail" required>
               </div>
           </fieldset>
           <fieldset class="form__fieldset">
@@ -85,7 +85,7 @@
               </div>
           </fieldset>
           <fieldset class="form__fieldset">
-            <legend class="form__heading">Посещенные<br> достопримечательности:</legend>
+            <legend class="form__heading form__heading--lion">Посещенные<br> достопримечательности:</legend>
               <div class="form__lions">
                 <input class="form__text" id="bridge" type="checkbox" name="check" checked>
                 <label class="form__grade" for="bridge">Мост Дьявола</label>
@@ -110,8 +110,8 @@
                 <textarea class="form__desc" id="story" name="story" rows="10" cols="33" placeholder="Опишите подробно все свои восторги"></textarea>
               </div>
           </fieldset>
-          <div class="form__btn">
-            <button class="form__btn" type="submit">Отправить отзыв</button>
+          <div class="form__inner">
+            <button class="form__button" type="submit">Отправить отзыв</button>
           </div>
         </form>
       </section>
@@ -161,12 +161,12 @@
       <button class="modal__btn" type="submit">OK</button>
     </section>
     <section class="modal">
-      <div class="page-title">
-        <h2 class="page-title__heading">Ваш отзыв отправлен!</h2>
-        <p class="page-title__text">Спасибо за ваше участие,ваш</p>
-        <p class="page-title__text">отзыв уже поступил к нам.</p>
-        <p class="page-title__text">В ближайшее время мы</p>
-        <p class="page-title__text">опубликуем его на сайте.</p>
+      <div class="page-title page-title--form">
+        <h2 class="page-title__heading page-title__heading--form ">Ваш отзыв отправлен!</h2>
+        <p class="page-title__text page-title__text--form">Спасибо за ваше участие,ваш</p>
+        <p class="page-title__text page-title__text--form">отзыв уже поступил к нам.</p>
+        <p class="page-title__text page-title__text--form">В ближайшее время мы</p>
+        <p class="page-title__text page-title__text--form">опубликуем его на сайте.</p>
       </div>
       <button class="modal__btn" type="submit">Закрыть окно</button>
     </section>
