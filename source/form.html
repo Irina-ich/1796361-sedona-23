@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="sourse/fonts" rel="stylesheet">
@@ -10,7 +11,8 @@
   <body class="page-body">
     <header class="page-header">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
@@ -30,87 +32,95 @@
               <a class="main-nav__link" href="https://htmlacademy.ru">HTML ACADEMY</a>
             </li>
           </ul>
+        </div>
       </nav>
-      <div class="title-inner">
-        <h2 class="title-inner__heading">Оставьте свой отзыв</h2>
-        <p class="title-inner__text">Помогите нашим отелям стать лучше!</p>
-        <p class="title-inner__text">Оставьте отзыв о них,а также о</p>
-        <p class="title-inner__text">посещенных вами</p>
-        <p class="title-inner__text">достопримечательностях</p>
+      <div class="baner baner--home">
+        <img src="img/back.jpg.png" width="320" height="214" alt="Фото гор"/>
+      </div>
+      <div class="page-title page-title--form">
+        <h2 class="page-title__heading page-title__heading--form">Оставьте свой отзыв</h2>
+        <p class="page-title__text page-title__text--form">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
     </header>
-    <main class="main-form">
-      <section class="container-review">
-        <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__fieldset">
-            <legend class="form__heading">Представьтесь:</legend>
+    <main class="form">
+      <section class="form__review">
+        <form class="form__box" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form__holder">
+            <fieldset class="form__fieldset form__fieldset--second">
+              <legend class="form__heading">Представьтесь:</legend>
               <div class="form__login">
                 <label class="form__subtitle" for="name">Имя*: </label>
                 <input class="form__text" id="name" type="text" name="name" placeholder="Петр" required>
               </div>
               <div class="form__login">
                 <label class="form__subtitle" for="surname">Фамилия*: </label>
-                <input class="form__text" id="surname" type="text" name="name" placeholder="Иванов" required>
+                <input class="form__text form__text--login" id="surname" type="text" name="name" placeholder="Иванов" required>
               </div>
               <div class="form__login">
                 <label class="form__subtitle" for="patronymic">Отчество: </label>
-                <input class="form__text" id="patronymic" type="text" name="name" placeholder="Александрович">
+                <input class="form__text form__text--login" id="patronymic" type="text" name="name" placeholder="Александрович">
               </div>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__heading">Контактная информация:</legend>
-              <div class="form__contacts">
-                <label class="form__subtitle" for="tel">Контактный телефон*:</label>
-                <input class="form__text" id="tel" type="tel" name="tel" placeholder="Введите телефон" required>
+            </fieldset>
+            <fieldset class="form__fieldset form__fieldset--three">
+              <legend class="form__heading form__heading--contact">Контактная информация:</legend>
+              <div class="form__row">
+                <div class="form__contacts">
+                  <label class="form__subtitle form__subtitle--desc" for="tel"><span class="form__subtitle form__subtitle--hidden">Контактный</span> телефон*:</label>
+                  <input class="form__text form__text--tel" id="tel" type="tel" name="tel" placeholder="Введите телефон" required>
+                </div>
+                <div class="form__contacts">
+                  <label class="form__subtitle form__subtitle--desc" for="email">Электронная почта*:</label>
+                  <input class="form__text form__text--email" id="email" type="email" name="email" placeholder="Введите e-mail" required>
+                </div>
               </div>
-              <div class="form__contacts">
-                <label class="form__subtitle" for="email">Электронная почта*:</label>
-                <input class="form__text" id="email" type="email" name="email" placeholder="Введите e-mail" required>
-              </div>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__heading">Ваше общее впечатление:</legend>
+            </fieldset>
+            <fieldset class="form__fieldset form__fieldset--first">
+              <legend class="form__heading form__heading--effect">Ваше общее впечатление:</legend>
               <div class="form__effect">
-                <input class="form__text" id="plus" type="radio" name="radio" checked>
+                <input class="form__radio" id="plus" type="radio" name="radio" checked>
                 <label class="form__grade" for="plus">Скорее положительное</label>
               </div>
               <div class="form__effect">
-                <input class="form__text" id="minus" type="radio" name="radio">
+                <input class="form__radio" id="minus" type="radio" name="radio">
                 <label class="form__grade" for="minus">Скорее отрицательное</label>
               </div>
               <div class="form__effect">
-                <input class="form__text" id="none" type="radio" name="radio">
+                <input class="form__radio" id="none" type="radio" name="radio">
                 <label class="form__grade" for="none">Затрудняюсь ответить</label>
               </div>
-          </fieldset>
+            </fieldset>
+          </div>
           <fieldset class="form__fieldset">
-            <legend class="form__heading">Посещенные<br> достопримечательности:</legend>
+            <legend class="form__heading form__heading--lion">Посещенные<br> достопримечательности:</legend>
+            <div class="form__wrap">
               <div class="form__lions">
-                <input class="form__text" id="bridge" type="checkbox" name="check" checked>
+                <input class="form__checkbox" id="bridge" type="checkbox" name="check" checked>
                 <label class="form__grade" for="bridge">Мост Дьявола</label>
               </div>
               <div class="form__lions">
-                <input class="form__text" id="mount" type="checkbox" name="check" checked>
+                <input class="form__checkbox" id="mount" type="checkbox" name="check" checked>
                 <label class="form__grade" for="mount">Гора-Колокол</label>
               </div>
               <div class="form__lions">
-                <input class="form__text" id="park" type="checkbox" name="check" checked>
+                <input class="form__checkbox" id="park" type="checkbox" name="check" checked>
                 <label class="form__grade" for="park">Слайд-парк</label>
               </div>
               <div class="form__lions">
-                <input class="form__text" id="rocks" type="checkbox" name="check">
+                <input class="form__checkbox" id="rocks" type="checkbox" name="check">
                 <label class="form__grade" for="rocks">Красные скалы</label>
               </div>
+            </div>
           </fieldset>
           <fieldset class="form__fieldset">
-            <legend class="form__heading">Опишите свои эмоции:</legend>
+            <legend class="form__heading form__heading--comments">Опишите свои эмоции:</legend>
               <div class="form__comment">
                 <label for="story"></label>
-                <textarea class="form__desc" id="story" name="story" rows="10" cols="33" placeholder="Опишите подробно все свои восторги"></textarea>
+                <textarea class="form__desc" id="story" name="story" placeholder="Опишите подробно все свои восторги"></textarea>
               </div>
           </fieldset>
-          <div class="form__btn">
-            <button class="form__btn" type="submit">Отправить отзыв</button>
+          <div class="form__inner">
+            <button class="form__button" type="submit">Отправить отзыв</button>
+            <p class="form__legend">* — Обязательные поля</p>
           </div>
         </form>
       </section>
@@ -151,23 +161,20 @@
     </footer>
     <h2 class="visually-hidden">Модальное окно</h2>
     <section class="modal">
-      <div class="form">
-        <h2 class="form__heading">Что-то пошло не так!</h2>
-        <p class="form__error">Проверьте поля,выделенные</p>
-        <p class="form__error">красным,скорее всего вы</p>
-        <p class="form__error">забыли их заполнить</p>
+      <div class="modal-form">
+        <h2 class="modal__heading">Что-то пошло не так!</h2>
+        <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       </div>
       <button class="modal__btn" type="submit">OK</button>
     </section>
     <section class="modal">
-      <div class="page-title">
-        <h2 class="page-title__heading">Ваш отзыв отправлен!</h2>
-        <p class="page-title__text">Спасибо за ваше участие,ваш</p>
-        <p class="page-title__text">отзыв уже поступил к нам.</p>
-        <p class="page-title__text">В ближайшее время мы</p>
-        <p class="page-title__text">опубликуем его на сайте.</p>
+      <div class="modal-form modal-form--big">
+        <h2 class="modal__heading modal__heading--big">Ваш отзыв отправлен!</h2>
+        <p class="modal__text modal__text--big">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.</p>
       </div>
-      <button class="modal__btn" type="submit">Закрыть окно</button>
+      <div class="modal__inner">
+      <button class="modal__btn modal__btn--closed" type="submit">Закрыть окно</button>
+    </div>
     </section>
 </body>
 </html>

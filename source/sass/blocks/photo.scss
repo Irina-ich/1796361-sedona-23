@@ -4,11 +4,63 @@
 
 .photo__text,
 .photo__number {
-  @include font-4;
-  font-weight: 700;
+  @include font-7;
 }
 
 .photo__author {
   @include font-4;
   text-transform: none;
+  margin: 0;
+}
+
+.photo__text {
+  margin: 0;
+}
+
+.photo__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.photo__desc {
+  @media (min-width: $tablet-width) and (max-width: 1199px) {
+    background-color: $basic-extra-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.photo__number {
+  padding-left: 14px;
+  margin-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 9px;
+    padding-right: 28px;
+  }
+}
+
+.photo__icon {
+  padding-top: 10px;
+}
+
+.photo__inner {
+  @media (min-width: $tablet-width) {
+    padding-left: 21px;
+  }
 }
