@@ -11,7 +11,8 @@
   <body class="page-body">
     <header class="page-header">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
@@ -31,17 +32,14 @@
               <a class="main-nav__link" href="https://htmlacademy.ru">HTML ACADEMY</a>
             </li>
           </ul>
+        </div>
       </nav>
       <div class="baner">
         <img src="img/Group-catalog.png" width="320" height="214" alt="Фото гор"/>
       </div>
-      <div class="title-inner">
-        <h2 class="title-inner__heading">Фото и видео</h2>
-        <div class="title-inner__slogan">
-          <p class="title-inner__text"> Не можете решиться на путешествие</p>
-          <p class="title-inner__text"> из-за курса?Фотографиии помогут вам</p>
-          <p class="title-inner__text"> забыть о политике и экономике.</p>
-        </div>
+      <div class="page-title page-title--catalog">
+        <h2 class="page-title__heading page-title__heading--catalog">Фото и видео</h2>
+        <p class="page-title__text page-title__text--catalog">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </div>
     </header>
     <main class="main-catalog">
@@ -130,9 +128,7 @@
       <section class="video">
         <div class="video__title">
           <h2 class="video__heading">Все еще сомневаетесь?</h2>
-          <p class="video__text">Смотрите видеопрезентацию и</p>
-          <p class="video__text">скорее за билетами, пока они не</p>
-          <p class="video__text">подорожали в очередной раз!</p>
+          <p class="video__text">Смотрите видеопрезентацию и скорее за билетами,пока они не подорожали в очередной раз!</p>
         </div>
         <video class="video__item" width="320" height="201" controls="controls" poster="img/video.jpg.jpg">
           <source src="video.mp4" type="video/mp4">

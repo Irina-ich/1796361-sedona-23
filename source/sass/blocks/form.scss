@@ -4,19 +4,40 @@
 }
 
 .form__heading {
+  padding-bottom: 20px;
+  text-align: center;
+
   @include font-1;
 
   @media (min-width: $tablet-width) {
     @include font-3;
   }
 
-  text-align: center;
+  &--effect {
+    padding-bottom: 37px;
+  }
+
+  &--comments {
+    padding-top: 6px;
+    padding-bottom: 15px;
+  }
+
+  &--lion {
+    padding-top: 14px;
+    padding-bottom: 36px;
+  }
 }
 
 .form__subtitle {
   @include font-5;
 
   padding-right: 10px;
+
+  &--hidden {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
 }
 
 .form__text,
@@ -27,24 +48,27 @@
 }
 
 .form__subtitle--desc {
-  padding-bottom: 8px;
+  padding-top: 14px;
+  padding-bottom: 5px;
   padding-left: 42px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 147px;
+  }
 }
 
 .form__text--tel,
 .form__text--email {
   padding-bottom: 14px;
-  width: 280px;
   margin: 0 20px;
-}
 
-.form__text--email {
-  padding-top: 5px;
-  margin-bottom: 49px;
-}
-
-.form__heading--lion {
-  padding-top: 57px;
+  @media (min-width: $tablet-width) {
+    margin: 0 60px;
+  }
 }
 
 .form__button {
@@ -54,35 +78,59 @@
   background-color: $basic-blue;
   border: none;
   padding: 18px 33px 14px 32px;
-  margin: 51px 21px 48px 19px;
+  margin: 0 21px 48px 19px;
   width: 280px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
     width: 324px;
+    margin: 0 132px 61px 60px;
   }
 
   @media (min-width: $desktop-width) {
     width: 480px;
+    margin: 0;
+  }
+}
+
+.form__inner {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 120px;
   }
 }
 
 .form__fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
 
   @include reset-list;
 
-  margin: 0;
-  padding: 0;
+  &--first {
+    order: 0;
+  }
+
+  &--second {
+    order: 1;
+  }
+
+  &--three {
+    order: 2;
+    grid-column: span 2;
+  }
 }
 
 .form__login {
   display: flex;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
   align-items: center;
-}
-
-.form__error {
-  @include font-4;
 }
 
 .form__text {
@@ -90,6 +138,38 @@
   min-height: 58px;
   padding: 0;
   padding-left: 22px;
+
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    width: 350px;
+  }
+
+  &--login {
+    width: 170px;
+
+    @media (min-width: $desktop-width) {
+      box-sizing: border-box;
+      width: 312px;
+    }
+  }
+
+  &--tel {
+    @media (min-width: $desktop-width) {
+      box-sizing: border-box;
+      width: 257px;
+      height: 58px;
+    }
+  }
+
+  &--email {
+    padding-top: 5px;
+    margin-bottom: 49px;
+
+    @media (min-width: $desktop-width) {
+      box-sizing: border-box;
+      width: 258px;
+    }
+  }
 }
 
 .form__heading--contact {
@@ -100,4 +180,79 @@
 .form__contacts {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.form__row {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.form__desc {
+  width: 235px;
+  min-height: 160px;
+  border: none;
+  padding: 13px 23px 29px 21px;
+  margin: 0 22px 51px 19px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 606px;
+    min-height: 118px;
+    padding: 18px 21px 24px 21px;
+    margin: 55px 60px 58px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    min-width: 960px;
+    min-height: 160px;
+    margin: 55px 120px;
+  }
+}
+
+.form__holder {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 277px;
+  }
+}
+
+.form__wrap {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.form__lions {
+  padding-bottom: 54px;
+}
+
+.form__legend {
+  @include font-5;
+  color: $basic-grey;
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.form__effect {
+  padding-bottom: 43px;
 }
