@@ -32,10 +32,9 @@
 }
 
 .advantages__list--white {
-  text-align: start;
-
   @media (max-width: $mobile-width-only) {
     padding-bottom: 9px;
+    text-align: start;
   }
 
   @media (min-width: $tablet-width) {
@@ -176,6 +175,10 @@
   @media (max-width: $mobile-width-only) {
     position: absolute;
     left: 21px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 26px;
   }
 }
 
