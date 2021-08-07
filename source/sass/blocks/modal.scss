@@ -3,25 +3,25 @@
 }
 
 .modal__heading {
-  @include font-1;
+  @include font-Heading-tiny;
   margin: 0;
   padding-top: 40px;
 
   @media (min-width: $tablet-width) {
-    @include font-8;
+    @include font-Heading-large;
     padding-left: 30px;
     padding-right: 30px;
   }
 
   &--big {
     @media (min-width: $tablet-width) {
-      @include font-6;
+      @include font-Heading-medium;
     }
   }
 }
 
 .modal__text {
-  @include font-4;
+  @include font-Text-small;
   margin: 0;
   padding: 35px 15px 22px 15px;
 
@@ -31,7 +31,7 @@
 }
 
 .modal__btn {
-  @include font-1;
+  @include font-Heading-tiny;
   color: $basic-white;
   padding: 18px 64px 14px 63px;
   background-color: $basic-blue;

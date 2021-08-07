@@ -10,7 +10,7 @@
   </head>
   <body class="page-body">
     <header class="page-header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="main-nav__wrapper">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list">
@@ -20,7 +20,7 @@
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html">Фото и видео</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--hidden">
               <a class="main-nav__logo main-nav__logo--small" href="index.html">
                 <img src="img/logo.svg" width="101.7" height="84" alt="Логотип Седона">
               </a>
@@ -176,5 +176,21 @@
       <button class="modal__btn modal__btn--closed" type="submit">Закрыть окно</button>
     </div>
     </section>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
 </body>
 </html>

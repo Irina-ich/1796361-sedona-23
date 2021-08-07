@@ -25,28 +25,31 @@
 
 .page-title__heading {
   margin: 0;
+  padding-bottom: 48px;
 
-  @include font-1;
+  @include font-Heading-tiny;
 
   @media (min-width: $tablet-width) {
-    @include font-6;
+    @include font-Heading-medium;
   }
 
   &--main {
     padding: 10px;
+    padding-bottom: 52px;
 
     @media (min-width: $tablet-width) {
-      @include font-3;
+      @include font-Heading-small;
     }
   }
 }
 
 .page-title__text {
-  @include font-5;
+  @include font-Text-large;
   margin: 0;
+  padding-bottom: 31px;
 
   &--catalog {
-    @include font-4;
+    @include font-Text-small;
 
     @media (min-width: $tablet-width) {
       padding: 0 37px;
@@ -58,10 +61,10 @@
   }
 
   &--form {
-    @include font-4;
+    @include font-Text-small;
 
     @media (min-width: $tablet-width) {
-      padding: 38px;
+      padding: 0 38px 66px 38px;
     }
 
     @media (min-width: $desktop-width) {

@@ -4,11 +4,11 @@
 
 .photo__text,
 .photo__number {
-  @include font-7;
+  @include font-Text-medium;
 }
 
 .photo__author {
-  @include font-4;
+  @include font-Text-small;
   text-transform: none;
   margin: 0;
 }

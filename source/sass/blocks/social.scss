@@ -1,3 +1,39 @@
 .social {
   @include reset-list;
+
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 6px;
+  padding-top: 33px;
+  padding-bottom: 45px;
+}
+
+.social__item {
+  width: 46px;
+  height: 48px;
+  background: $basic-blue;
+}
+
+.social__link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+
+  &:hover {
+    background-color: $special-blue-1;
+  }
+
+  &:active {
+    background-color: $special-blue-2;
+  }
+}
+
+.social__link:hover path {
+  transform: scale(0.8);
+}
+
+.social__link:active path {
+  opacity: 0.3;
 }

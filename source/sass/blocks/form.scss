@@ -7,10 +7,10 @@
   padding-bottom: 20px;
   text-align: center;
 
-  @include font-1;
+  @include font-Heading-tiny;
 
   @media (min-width: $tablet-width) {
-    @include font-3;
+    @include font-Heading-small;
   }
 
   &--effect {
@@ -29,7 +29,7 @@
 }
 
 .form__subtitle {
-  @include font-5;
+  @include font-Text-large;
 
   padding-right: 10px;
 
@@ -43,7 +43,7 @@
 .form__text,
 .form__grade,
 .form__desc {
-  @include font-1;
+  @include font-Heading-tiny;
   text-transform: none;
 }
 
@@ -72,7 +72,7 @@
 }
 
 .form__button {
-  @include font-3;
+  @include font-Heading-small;
 
   color: $basic-white;
   background-color: $basic-blue;
@@ -245,10 +245,10 @@
 }
 
 .form__legend {
-  @include font-5;
+  @include font-Text-large;
   color: $basic-grey;
 
-  @media (min-width: $mobile-width) and (max-width: 767px) {
+  @media (max-width: $mobile-width-only) {
     display: none;
   }
 }
