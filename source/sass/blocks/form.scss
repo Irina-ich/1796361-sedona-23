@@ -20,10 +20,16 @@
 
   @media (min-width: $tablet-width) {
     @include font-Heading-small;
+
+    padding-bottom: 55px;
   }
 
   &--effect {
     padding-bottom: 37px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 55px;
+    }
   }
 
   &--comments {
@@ -237,17 +243,32 @@
 
   @include reset-list;
 
-  &--first {
-    order: 0;
-  }
+  @media (min-width: $tablet-width) {
+    &--first {
+      order: 0;
+      text-align: center;
+    }
 
-  &--second {
-    order: 1;
-  }
+    &--second {
+      order: 1;
+      text-align: center;
+      position: relative;
 
-  &--three {
-    order: 2;
-    grid-column: span 2;
+      &::after {
+        content: "";
+        position: absolute;
+        height: 292px;
+        width: 1px;
+        background: $special-grey-5;
+        bottom: 17px;
+        left: 0;
+      }
+    }
+
+    &--three {
+      order: 2;
+      grid-column: span 2;
+    }
   }
 }
 
@@ -296,9 +317,34 @@
   }
 }
 
-.form__heading--contact {
+.form__heading--contact,
+.form__heading--lion,
+.form__heading--comments {
   padding-top: 26px;
   padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 123px;
+    background: $special-grey-5;
+  }
+
+  &::before {
+    top: 37px;
+    right: 323px;
+  }
+
+  &::after {
+    top: 37px;
+    left: 323px;
+  }
 }
 
 .form__contacts {
@@ -379,6 +425,6 @@
 }
 
 .form__effect {
-  padding-bottom: 43px;
+  padding-bottom: 21px;
   padding-left: 24px;
 }
