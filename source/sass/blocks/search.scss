@@ -18,19 +18,19 @@
 
 .search__title,
 .search__link {
-  @include font-3;
+  @include font-Heading-small;
 }
 
 .search__info {
-  @include font-4;
+  @include font-Text-small;
   margin: 0;
 }
 
 .search__title {
-  @include font-3;
+  @include font-Heading-small;
 
   @media (min-width: $tablet-width) {
-    @include font-6;
+    @include font-Heading-medium;
   }
 }
 
@@ -40,6 +40,19 @@
   padding: 14px 32px 17px 32px;
   margin: 27px 20px 49px 20px;
   color: $basic-white;
+
+  &:hover {
+    background-color: $special-blue-1;
+  }
+
+  &:active {
+    background-color: $special-blue-2;
+    color: $special-white;
+  }
+
+  &:disabled {
+    background-color: $special-grey-3;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 14px 121px 17px 121px;

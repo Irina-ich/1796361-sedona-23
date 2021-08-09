@@ -5,58 +5,72 @@
   list-style-type: none;
 }
 
-@mixin font-1 {
+@mixin font-Heading-menu {
   font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@mixin font-Heading-large {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@mixin font-Heading-medium {
+  font-size: 30px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-@mixin font-2 {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-@mixin font-3 {
+@mixin font-Heading-small {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-@mixin font-4 {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
+@mixin font-Heading-tiny {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
-@mixin font-5 {
+@mixin font-Text-large {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-@mixin font-6 {
-  font-size: 30px;
+@mixin font-Text-menu {
+  font-size: 14px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-@mixin font-7 {
+@mixin font-Text-medium {
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-@mixin font-8 {
-  font-size: 30px;
-  line-height: 40px;
-  font-weight: 700;
+@mixin font-Text-small {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@mixin font-Text-tiny {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
   text-transform: uppercase;
 }
