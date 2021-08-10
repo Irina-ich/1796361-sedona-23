@@ -79,6 +79,12 @@
   }
 }
 
+.advantages__item--grey:not(:last-child) {
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $special-grey-6;
+  }
+}
+
 .advantages__inner--blue {
   padding: 0;
 

@@ -272,6 +272,12 @@
   }
 }
 
+.form__fieldset:not(:last-child) {
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $special-grey-3;
+  }
+}
+
 .form__login {
   display: flex;
   padding: 0 20px 20px 20px;

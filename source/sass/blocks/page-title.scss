@@ -1,7 +1,7 @@
 .page-title {
   text-transform: uppercase;
   text-align: center;
-  width: 285px;
+  min-width: 285px;
   min-height: 162px;
   margin: 0 auto;
 
@@ -14,8 +14,18 @@
     width: 484px;
   }
 
+  &--catalog {
+    @media (max-width: $mobile-width-only) {
+      border-bottom: 1px solid $special-grey-3;
+    }
+  }
+
   &--form {
     padding-top: 36px;
+
+    @media (max-width: $mobile-width-only) {
+      border-bottom: 1px solid $special-grey-3;
+    }
 
     @media (min-width: $desktop-width) {
       display: none;
