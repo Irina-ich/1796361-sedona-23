@@ -8,9 +8,11 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
+    box-shadow: $page-shadow;
   }
 
   @media (min-width: $desktop-width) {
     width: 1200px;
+    box-shadow: $page-shadow;
   }
 }

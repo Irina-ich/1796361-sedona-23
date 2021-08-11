@@ -60,6 +60,9 @@
 
   &--catalog {
     @include font-Text-small;
+    text-align: center;
+    padding-left: 21px;
+    padding-right: 9px;
 
     @media (min-width: $tablet-width) {
       padding: 0 37px;
