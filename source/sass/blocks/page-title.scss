@@ -44,8 +44,9 @@
   }
 
   &--main {
-    padding: 10px;
-    padding-bottom: 52px;
+    @media (max-width: $mobile-width-only) {
+      padding: 32px 24px 52px 24px;
+    }
 
     @media (min-width: $tablet-width) {
       @include font-Heading-small;
@@ -57,6 +58,13 @@
   @include font-Text-large;
   margin: 0;
   padding-bottom: 31px;
+
+  &--main {
+    @media (max-width: $mobile-width-only) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
 
   &--catalog {
     @include font-Text-small;
@@ -75,6 +83,7 @@
 
   &--form {
     @include font-Text-small;
+    padding-bottom: 10px;
 
     @media (min-width: $tablet-width) {
       padding: 0 38px 66px 38px;
