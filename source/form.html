@@ -7,6 +7,9 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="sourse/fonts" rel="stylesheet">
     <link href="favicon.ico" rel="icon">
+    <link href="img/favicon/32.svg" rel="icon" type="image/svg+xml">
+    <link href="img/favicon/apple-icon-180x180.png" rel="apple-touch-icon">
+    <link href="manifest.webmanifest" rel="manifest">
   </head>
   <body class="page-body">
     <header class="page-header">
@@ -47,7 +50,7 @@
         <form class="form__box" action="https://echo.htmlacademy.ru" method="post">
           <div class="form__holder">
             <fieldset class="form__fieldset form__fieldset--second">
-              <legend class="form__heading">Представьтесь:</legend>
+              <legend class="form__heading form__heading--present">Представьтесь:</legend>
               <div class="form__login">
                 <label class="form__subtitle" for="name">Имя*: </label>
                 <input class="form__text" id="name" type="text" name="name" placeholder="Петр" required>
@@ -67,10 +70,16 @@
                 <div class="form__contacts">
                   <label class="form__subtitle form__subtitle--desc" for="tel"><span class="form__subtitle form__subtitle--hidden">Контактный</span> телефон*:</label>
                   <input class="form__text form__text--tel" id="tel" type="tel" name="tel" placeholder="Введите телефон" required>
+                  <svg class="form__icon form__icon--tel" width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z" fill="#010101"/>
+                  </svg>
                 </div>
                 <div class="form__contacts">
                   <label class="form__subtitle form__subtitle--desc" for="email">Электронная почта*:</label>
                   <input class="form__text form__text--email" id="email" type="email" name="email" placeholder="Введите e-mail" required>
+                  <svg class="form__icon form__icon--email" width="16" height="12" viewbox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z" fill="black"/>
+                  </svg>
                 </div>
               </div>
             </fieldset>
@@ -111,7 +120,7 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--noBorder">
             <legend class="form__heading form__heading--comments">Опишите свои эмоции:</legend>
               <div class="form__comment">
                 <label for="story"></label>

@@ -2,6 +2,16 @@
   @include reset-list;
 }
 
+.photo__item {
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $special-grey-3;
+  }
+}
+
+.photo__image {
+  display: block;
+}
+
 .photo__text,
 .photo__number {
   @include font-Text-medium;
