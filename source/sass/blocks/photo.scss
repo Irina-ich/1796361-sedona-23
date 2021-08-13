@@ -8,6 +8,10 @@
   }
 }
 
+.photo__image {
+  display: block;
+}
+
 .photo__text,
 .photo__number {
   @include font-Text-medium;
