@@ -179,11 +179,13 @@
   }
 }
 
-.main-nav__logo {
+.main-nav__logotype {
+  width: 101.6px;
   height: 84px;
 
   @media (min-width: $desktop-width) {
-    height: 186.6px;
+    width: 186.6px;
+    height: 96.43px;
   }
 }
 

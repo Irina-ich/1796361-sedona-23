@@ -25,7 +25,11 @@
             </li>
             <li class="main-nav__item main-nav__item--hidden">
               <a class="main-nav__logo main-nav__logo--small" href="index.html">
-                <img src="img/logo.svg" width="101.7" height="84" alt="Логотип Седона">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+                  <img class="main-nav__logotype" src="img/logotype-mobile.svg" width="101.7" height="59.1" alt="Логотип Седона">
+                </picture>
               </a>
             </li>
             <li class="main-nav__item main-nav__item main-nav__item--current">
@@ -38,7 +42,7 @@
         </div>
       </nav>
       <div class="baner baner--home">
-        <img src="img/back.jpg.png" width="320" height="214" alt="Фото гор"/>
+        <img src="img/text-index.svg" width="282" height="214" alt="Фото гор"/>
       </div>
       <div class="page-title page-title--form">
         <h2 class="page-title__heading page-title__heading--form">Оставьте свой отзыв</h2>

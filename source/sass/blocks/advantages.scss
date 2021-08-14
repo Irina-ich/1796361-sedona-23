@@ -19,6 +19,10 @@
   }
 }
 
+.advantages__photo {
+  display: block;
+}
+
 .advantages__list {
   @include reset-list;
   display: flex;

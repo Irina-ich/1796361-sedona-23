@@ -47,6 +47,11 @@
   padding-left: 28px;
   padding-right: 28px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .video__wrapper {

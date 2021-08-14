@@ -26,6 +26,12 @@
   margin: 0;
 }
 
+.search__info--br {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
 .search__title {
   @include font-Heading-small;
 

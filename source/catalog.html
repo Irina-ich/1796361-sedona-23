@@ -25,7 +25,11 @@
             </li>
             <li class="main-nav__item main-nav__item--hidden">
               <a class="main-nav__logo main-nav__logo--small" href="index.html">
-                <img src="img/logo.svg" width="101.7" height="84" alt="Логотип Седона">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+                  <img class="main-nav__logotype" src="img/logotype-mobile.svg" width="101.7" height="59.1" alt="Логотип Седона">
+                </picture>
               </a>
             </li>
             <li class="main-nav__item">
@@ -38,7 +42,7 @@
         </div>
       </nav>
       <div class="baner">
-        <img src="img/Group-catalog.png" width="320" height="214" alt="Фото гор"/>
+        <img src="img/text-index.svg" width="282" height="214" alt="Фото гор"/>
       </div>
       <div class="page-title page-title--catalog">
         <h2 class="page-title__heading page-title__heading--catalog">Фото и видео</h2>
@@ -51,7 +55,11 @@
           <li class="photo__item">
             <figure>
               <a href="#">
-                <img class="photo__image" src="img/photo-1-catalog.jpg.jpg" width="280" height="280" alt="Фото неродные просторы">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg.jpg 1x, img/photo-1-desktop.jpg@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-1-tablet 1.jpg, img/photo-1-tablet 1@2x.jpg">
+                  <img class="photo__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Фото неродные просторы">
+                </picture>
               </a>
               <figcaption class="photo__desc">
                 <div class="photo__inner">
@@ -131,7 +139,7 @@
       <section class="video">
         <div class="video__title">
           <h2 class="video__heading">Все еще сомневаетесь?</h2>
-          <p class="video__text">Смотрите видеопрезентацию и скорее за билетами,пока они не подорожали в очередной раз!</p>
+          <p class="video__text"><span class="video__text--br">Смотрите видеопрезентацию и скорее за билетами,пока они</span> не подорожали в очередной раз!</p>
         </div>
         <div class="video__wrapper">
           <video class="video__item" width="320" height="201" poster="img/video.jpg.jpg">
@@ -144,7 +152,7 @@
             <button class="video__control video__control--replay" type="button">
               <svg class="video__icon" width="16" height="20" viewbox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8 4V0L3 5L8 10V6C11.3 6 14 8.7 14 12C14 15.3 11.3 18 8 18C4.7 18 2 15.3 2 12H0C0 16.4 3.6 20 8 20C12.4 20 16 16.4 16 12C16 7.6 12.4 4 8 4Z" fill="#5C6870"/>
-                </svg>
+              </svg>
             </button>
             <div class="video__control video__control--range">
               <div class="video__scale"></div>
