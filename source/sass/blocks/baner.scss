@@ -1,12 +1,47 @@
-.baner {
-  height: 389px;
+.baner--form {
+  height: 158px;
   text-align: center;
-  background-image: url("../img/back-mobile.png");
+  background-image: url("../img/back-mobile-form.png");
   background-repeat: no-repeat;
   background-position: center;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/back-mobile@2x.png");
+    background-image: url("../img/back-mobile-form@2x.png");
+    background-size: 320px auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 290px;
+    background-image: url("../img/back-tablet-form.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet-form@2x.png");
+      background-size: 768px auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 301px;
+    background-image: url("../img/back-desktop-form.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop-form@2x.png");
+      background-size: cover;
+    }
+  }
+}
+
+.baner--home {
+  height: 389px;
+  text-align: center;
+  background-image: url("../img/intro-triangle-mobile.svg"), url("../img/back-mobile.png");
+  background-repeat: no-repeat;
+  background-position: bottom, center calc(100% - 1px);
+  background-size: 101%, 100%;
+  background-color: $basic-blue;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro-triangle-mobile.svg"), url("../img/back-mobile@2x.png");
     background-size: 320px auto;
   }
 
@@ -27,5 +62,21 @@
       background-image: url("../img/back-desktop@2x.png");
       background-size: cover;
     }
+  }
+}
+
+.baner__text--home {
+  padding-top: 90px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 77px;
+  }
+}
+
+.baner__text--form {
+  padding-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 67px;
   }
 }
