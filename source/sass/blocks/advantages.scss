@@ -66,6 +66,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    padding-bottom: 61px;
   }
 }
 
@@ -123,6 +124,7 @@
     margin: 0;
     padding-right: 8px;
     padding-left: 8px;
+    padding-top: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -248,6 +250,21 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 26px;
+
+    &--house {
+      width: 75px;
+      height: 72px;
+    }
+
+    &--gift {
+      width: 76px;
+      height: 68px;
+    }
+
+    &--burger {
+      width: 64px;
+      height: 75px;
+    }
   }
 }
 
@@ -255,7 +272,7 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding-top: 21px;
+    padding-top: 14px;
     padding-bottom: 21px;
   }
 }
