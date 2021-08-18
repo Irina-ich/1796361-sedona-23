@@ -36,7 +36,7 @@
   display: block;
 
   @media (max-width: $mobile-width-only) {
-    padding-top: 21px;
+    padding-top: 20px;
   }
 }
 
@@ -60,6 +60,10 @@
 
 .photo__text {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+  }
 }
 
 .photo__group {
@@ -67,10 +71,6 @@
   flex-direction: column;
   margin-left: 20px;
   margin-right: 20px;
-
-  @media (max-width: $mobile-width-only) {
-    padding-bottom: 21px;
-  }
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -95,6 +95,7 @@
     flex-wrap: wrap;
     padding-left: 60px;
     padding-right: 60px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -102,10 +103,13 @@
     flex-wrap: nowrap;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 0;
   }
 }
 
 .photo__desc {
+  padding-bottom: 17px;
+
   @media (min-width: $tablet-width) and (max-width: 1199px) {
     background-color: $basic-extra-grey;
   }
@@ -117,7 +121,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    bottom: 14px;
+    bottom: 1px;
     display: flex;
     justify-content: space-between;
     color: $basic-white;
@@ -126,17 +130,29 @@
 }
 
 .photo__number {
-  padding-left: 14px;
+  padding-left: 9px;
   margin-top: 10px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 9px;
-    padding-right: 28px;
+    padding-left: 7px;
+    padding-right: 20px;
   }
 }
 
 .photo__icon {
   padding-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 26px;
+  }
+}
+
+.photo__icon--small {
+  padding-right: 11px;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 9px;
+  }
 }
 
 .photo__pic path {
@@ -147,6 +163,8 @@
 }
 
 .photo__inner {
+  padding-top: 11px;
+
   @media (min-width: $tablet-width) {
     padding-left: 21px;
   }

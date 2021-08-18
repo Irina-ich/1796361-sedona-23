@@ -21,7 +21,8 @@
   }
 
   &--form {
-    padding-top: 36px;
+    padding-top: 42px;
+    padding-right: 5px;
 
     @media (max-width: $mobile-width-only) {
       border-bottom: 1px solid $special-grey-3;
@@ -70,19 +71,29 @@
       padding-top: 43.5px;
       padding-bottom: 31px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 52px;
+    }
   }
 }
 
 .page-title__heading--catalog {
-  padding-top: 32px;
+  padding-top: 31px;
+  padding-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     padding-top: 64px;
+    padding-bottom: 34px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 102px;
   }
+}
+
+.page-title__heading--form {
+  padding-bottom: 28px;
 }
 
 .page-title__text {
@@ -94,10 +105,15 @@
     @media (max-width: $mobile-width-only) {
       padding-left: 20px;
       padding-right: 20px;
+      padding-top: 3px;
     }
 
     @media (min-width: $tablet-width) {
       padding-bottom: 53px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 43px;
     }
   }
 
@@ -105,18 +121,18 @@
     @include font-Text-small;
     text-align: center;
     padding-left: 21px;
-    padding-right: 9px;
+    padding-right: 15px;
 
     @media (min-width: $tablet-width) {
       padding-left: 37px;
       padding-right: 37px;
-      padding-bottom: 64px;
+      padding-bottom: 75px;
     }
 
     @media (min-width: $desktop-width) {
       padding-left: 29px;
       padding-right: 29px;
-      padding-bottom: 67px;
+      padding-bottom: 79px;
     }
   }
 

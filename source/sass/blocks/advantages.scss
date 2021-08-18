@@ -2,14 +2,14 @@
   background-color: $basic-blue;
   color: $basic-white;
   text-align: center;
-  padding: 55px 19px 39px 19px;
+  padding: 54px 19px 26px 19px;
 
   @media (min-width: $tablet-width) {
     padding: 30px 12px 30px 13px;
   }
 
   &--small {
-    padding: 39px 16px 35px 15px;
+    padding: 42px 16px 24px 15px;
 
     @media (min-width: $tablet-width) {
       grid-column: 2;
@@ -42,9 +42,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    height: 330px;
-    padding-left: 36px;
-    padding-right: 31px;
+    min-height: 330px;
   }
 }
 
@@ -56,6 +54,18 @@
   @media (min-width: $desktop-width) {
     width: 400px;
   }
+
+  &--grey {
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 36px;
+    }
+  }
+}
+
+.advantages__item--greyTwo {
+  @media (min-width: $tablet-width) {
+    padding-top: 19px;
+  }
 }
 
 .advantages__inner {
@@ -66,7 +76,6 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding-bottom: 61px;
   }
 }
 
@@ -76,7 +85,8 @@
   align-items: center;
 
   @media (max-width: $mobile-width-only) {
-    padding: 26px;
+    padding-left: 26px;
+    padding-right: 26px;
   }
 
   @media (min-width: $tablet-width) {
@@ -114,6 +124,7 @@
   @media (min-width: $tablet-width) {
     @include font-Heading-small;
     text-align: center;
+    margin-bottom: 23px;
   }
 }
 
@@ -130,20 +141,28 @@
   @media (min-width: $desktop-width) {
     padding-right: 81px;
     padding-left: 81px;
+    padding-top: 17px;
+  }
+}
+
+.advantages__title--blueTwo {
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 29px;
   }
 }
 
 .advantages__title--grey {
-  padding-bottom: 10px;
-
-  @media (max-width: $mobile-width-only) {
-    padding-top: 25px;
-  }
+  padding-bottom: 3px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 42px;
     padding-left: 49px;
     padding-right: 49px;
+    margin: 0;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -154,24 +173,30 @@
 
 .advantages__desc {
   @include font-Text-tiny;
-  padding-left: 10px;
+  padding-left: 3px;
   padding-right: 10px;
 
   @media (min-width: $tablet-width) {
     text-align: center;
-    padding: 0 15px;
+    padding: 0 33px;
+    margin: 0;
+    padding-left: 31px;
 
     &--two {
-      padding: 0 21px;
+      padding: 0 51px;
     }
 
     &--three {
-      padding: 0 3px;
+      padding: 0 31px;
     }
 
     &--grey {
       padding: 10px 39px;
       margin: 0;
+
+      @media (max-width: $mobile-width-only) {
+        padding-left: 13px;
+      }
     }
 
     &--grey-small {
@@ -187,7 +212,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 20px;
+    padding: 0 50px;
 
     &--grey {
       padding: 10px 55px;
@@ -199,7 +224,7 @@
 .advantages__desc--blue {
   @media (min-width: $desktop-width) {
     padding-left: 48px;
-    padding-right: 48px;
+    padding-right: 46px;
   }
 }
 
@@ -215,16 +240,15 @@
   position: relative;
 
   @media (max-width: $mobile-width-only) {
-    padding-bottom: 26px;
+    padding-bottom: 14px;
   }
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 60px;
-    padding-left: 36px;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 80px;
+    padding-bottom: 20px;
   }
 
   @media (min-width: $tablet-width) {
@@ -246,34 +270,44 @@
   @media (max-width: $mobile-width-only) {
     position: absolute;
     left: 21px;
+    top: -7px;
+
+    &--gift {
+      left: 29px;
+    }
   }
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 26px;
-
     &--house {
       width: 75px;
       height: 72px;
+      padding-bottom: 21px;
     }
 
     &--gift {
-      width: 76px;
-      height: 68px;
+      width: 64px;
+      height: 75px;
     }
 
     &--burger {
-      width: 64px;
-      height: 75px;
+      width: 76px;
+      height: 68px;
+      padding-bottom: 23px;
     }
   }
 }
 
 .advantages__number {
   margin: 0;
+  padding-top: 10px;
 
   @media (min-width: $tablet-width) {
     padding-top: 14px;
     padding-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 12px;
   }
 }
 

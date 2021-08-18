@@ -42,7 +42,11 @@
         </div>
       </nav>
       <div class="baner baner--home">
-        <img class="baner__text baner__text--home" src="img/text-index.svg" width="282" height="214" alt="Приветствие города Седона"/>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/text-index-dekstop.svg">
+          <source media="(min-width: 768px)" srcset="img/text-index-tablet.svg">
+          <img class="baner__text baner__text--home" src="img/text-index.svg" width="282" height="214" alt="Приветствие города Седона"/>
+        </picture>
       </div>
       <div class="page-title page-title--main">
         <h1 class="page-title__heading page-title__heading--main">Cедона — небольшой городок в аризоне, заслуживающий большего!</h1>
@@ -75,7 +79,7 @@
               <h3 class="advantages__title">Жильё</h3>
               <p class="advantages__desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
-            <li class="advantages__item advantages__item--white">
+            <li class="advantages__item advantages__item--white advantages__item--three">
               <svg class="advantages__icon advantages__icon--gift" aria-hidden="true" focusable="false" width="32" height="38" viewbox="0 0 32 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#icon-gift"></use>
               </svg>
@@ -92,7 +96,7 @@
           </ul>
           <div class="advantages__inner advantages__inner--blue">
             <div class="advantages__box advantages__box--small">
-              <h3 class="advantages__title advantages__title--blue">Там есть мост&nbsp;дьявола</h3>
+              <h3 class="advantages__title advantages__title--blue advantages__title--blueTwo">Там есть мост&nbsp;дьявола</h3>
               <p class="advantages__number">—№2—</p>
               <p class="advantages__desc advantages__desc--blue advantages__desc--blue-two">Да, по нему можно пройти! Eсли вы осмелитесь, конечно</p>
             </div>
@@ -117,7 +121,7 @@
                 <p class="advantages__number">— №4 —</p>
                 <p class="advantages__desc advantages__desc--grey advantages__desc--grey-small">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
               </li>
-              <li class="advantages__item advantages__item--grey">
+              <li class="advantages__item advantages__item--grey advantages__item--greyTwo">
                 <h3 class="advantages__title advantages__title--grey">Мало туристов</h3>
                 <p class="advantages__number">— №5 —</p>
                 <p class="advantages__desc advantages__desc--grey">Большинство едет в гранд каньон и толпится там</p>

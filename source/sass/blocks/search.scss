@@ -37,6 +37,8 @@
 
   @media (min-width: $tablet-width) {
     @include font-Heading-medium;
+    margin: 0;
+    padding-bottom: 32px;
   }
 }
 
@@ -62,10 +64,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 14px 121px 17px 121px;
-    margin: 37px 155px 58px 155px;
+    margin: 2px 155px 58px 155px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 42px 371px 66px 371px;
+    margin: 2px 371px 66px 371px;
   }
 }
