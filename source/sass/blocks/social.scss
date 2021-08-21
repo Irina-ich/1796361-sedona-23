@@ -5,8 +5,18 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 6px;
-  padding-top: 33px;
-  padding-bottom: 45px;
+  padding-top: 20px;
+  padding-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 13px;
+    padding-top: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 31px;
+    padding-right: 42px;
+  }
 }
 
 .social__item {
@@ -31,10 +41,23 @@
   }
 }
 
-.social__link:hover path {
+.social__link:hover svg {
   transform: scale(0.8);
 }
 
-.social__link:active path {
+.social__link:active svg {
   opacity: 0.3;
+}
+
+.social--catalog {
+  padding-top: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 9px;
+    padding-top: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 45px;
+  }
 }

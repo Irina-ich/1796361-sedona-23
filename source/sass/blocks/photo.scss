@@ -6,10 +6,45 @@
   @media (max-width: $mobile-width-only) {
     border-bottom: 1px solid $special-grey-3;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.photo__box,
+.photo__group {
+  margin: 0;
+}
+
+.photo__box {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .photo__image {
   display: block;
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 20px;
+  }
+}
+
+.photo__image--two {
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 400px;
+  }
 }
 
 .photo__text,
@@ -25,26 +60,56 @@
 
 .photo__text {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+  }
 }
 
 .photo__group {
   display: flex;
   flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .photo__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: nowrap;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
   }
 }
 
 .photo__desc {
+  padding-bottom: 17px;
+
   @media (min-width: $tablet-width) and (max-width: 1199px) {
     background-color: $basic-extra-grey;
   }
@@ -53,23 +118,53 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 1px;
+    display: flex;
+    justify-content: space-between;
+    color: $basic-white;
+    width: 100%;
+  }
 }
 
 .photo__number {
-  padding-left: 14px;
+  padding-left: 9px;
   margin-top: 10px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 9px;
-    padding-right: 28px;
+    padding-left: 7px;
+    padding-right: 20px;
   }
 }
 
 .photo__icon {
   padding-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 26px;
+  }
+}
+
+.photo__icon--small {
+  padding-right: 11px;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 9px;
+  }
+}
+
+.photo__pic path {
+  @media (min-width: $desktop-width) {
+    fill: $basic-white;
+    opacity: 1;
+  }
 }
 
 .photo__inner {
+  padding-top: 11px;
+
   @media (min-width: $tablet-width) {
     padding-left: 21px;
   }
