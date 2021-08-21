@@ -235,12 +235,6 @@
   }
 }
 
-.advantages__desc--white {
-  @media (max-width: $mobile-width-only) {
-    padding-top: 1px;
-  }
-}
-
 .advantages__desc--blue {
   @media (min-width: $desktop-width) {
     padding-left: 48px;
