@@ -4,6 +4,56 @@
   min-height: 56px;
 }
 
+.main-nav__item--one {
+  @media (min-width: $tablet-width) {
+    padding-left: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 90px;
+  }
+}
+
+.main-nav__item--two {
+  @media (min-width: $tablet-width) {
+    padding-left: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+  }
+}
+
+.main-nav__item--three {
+  @media (min-width: $tablet-width) {
+    padding-left: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 53px;
+  }
+}
+
+.main-nav__item--four {
+  @media (min-width: $tablet-width) {
+    padding-left: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 97px;
+  }
+}
+
+.main-nav__item--five {
+  @media (min-width: $tablet-width) {
+    padding-left: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 139px;
+  }
+}
+
 .main-nav__list {
   @include reset-list;
   background-color: $basic-blue;
@@ -11,9 +61,15 @@
   flex-direction: column;
   text-align: center;
 
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: space-evenly;
     background-color: $basic-white;
     flex-grow: 1;
     align-items: center;
@@ -31,6 +87,7 @@
     cursor: pointer;
     background: transparent;
     border: none;
+    z-index: 5;
 
     &:active {
       opacity: 0.3;
@@ -43,13 +100,6 @@
 }
 
 .main-nav--opened {
-  @media (max-width: $mobile-width-only) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
   .main-nav__item:last-child {
     @media (max-width: $mobile-width-only) {
       position: relative;
@@ -176,8 +226,10 @@
     }
 
     &--current {
-      color: $special-brown;
-      padding-left: 5px;
+      @media (max-width: $mobile-width-only) {
+        color: $special-brown;
+        padding-left: 5px;
+      }
     }
   }
 }

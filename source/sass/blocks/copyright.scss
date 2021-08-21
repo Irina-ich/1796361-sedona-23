@@ -19,11 +19,11 @@
 }
 
 .copyright__link {
-  &:hover path {
-    fill: $basic-blue;
+  &:hover svg {
+    stroke: $basic-blue;
   }
 
-  &:active path {
+  &:active svg {
     fill: $basic-black;
     opacity: 0.3;
   }
