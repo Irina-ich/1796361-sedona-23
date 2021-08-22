@@ -9,7 +9,7 @@
   }
 
   &--small {
-    padding: 42px 16px 24px 15px;
+    padding: 39px 16px 20px 15px;
 
     @media (min-width: $tablet-width) {
       grid-column: 2;
@@ -64,7 +64,7 @@
 
 .advantages__inner {
   @media (max-width: $mobile-width-only) {
-    padding-bottom: 30px;
+    padding-bottom: 36px;
   }
 
   @media (min-width: $tablet-width) {
@@ -150,7 +150,7 @@
 }
 
 .advantages__title--grey {
-  padding-bottom: 4px;
+  padding-bottom: 2px;
   padding-top: 28px;
 
   @media (min-width: $tablet-width) {
@@ -169,8 +169,12 @@
 
 .advantages__desc {
   @include font-Text-tiny;
-  padding-left: 3px;
+  padding-left: 0;
   padding-right: 10px;
+
+  &--grey {
+    padding-left: 10px;
+  }
 
   @media (min-width: $tablet-width) {
     text-align: center;
@@ -189,10 +193,6 @@
     &--grey {
       padding: 10px 39px;
       margin: 0;
-
-      @media (max-width: $mobile-width-only) {
-        padding-left: 13px;
-      }
     }
 
     &--grey-small {
@@ -218,7 +218,7 @@
 
 .advantages__desc--greyOne {
   @media (max-width: $mobile-width-only) {
-    margin-bottom: 22px;
+    margin-bottom: 24px;
   }
 }
 
@@ -231,11 +231,15 @@
 .advantages__desc--greyThree {
   @media (max-width: $mobile-width-only) {
     margin: 0;
-    padding-top: 7px;
+    padding-top: 15px;
   }
 }
 
 .advantages__desc--blue {
+  @media (max-width: $mobile-width-only) {
+    padding-top: 2px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-left: 48px;
     padding-right: 46px;
@@ -243,6 +247,11 @@
 }
 
 .advantages__desc--blue-two {
+  @media (max-width: $mobile-width-only) {
+    padding-top: 5px;
+    padding-left: 6px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-left: 59px;
     padding-right: 59px;
@@ -254,7 +263,7 @@
   position: relative;
 
   @media (max-width: $mobile-width-only) {
-    padding-bottom: 14px;
+    padding-bottom: 13px;
   }
 
   @media (min-width: $tablet-width) {
@@ -283,11 +292,12 @@
 .advantages__icon {
   @media (max-width: $mobile-width-only) {
     position: absolute;
-    left: 21px;
-    top: -7px;
+    left: 19px;
+    top: -8px;
 
     &--gift {
-      left: 29px;
+      left: 24px;
+      top: -12px;
     }
   }
 
