@@ -35,8 +35,11 @@
 }
 
 .page-footer__contacts--catalog {
+  padding-top: 67px;
+
   @media (min-width: $tablet-width) {
     padding-bottom: 17px;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {

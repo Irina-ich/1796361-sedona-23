@@ -60,6 +60,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 19px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
 }
 
 .advantages__inner {
@@ -167,6 +171,16 @@
   }
 }
 
+.advantages__title--greyOne {
+  @media (min-width: $tablet-width) {
+    padding-top: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 9px;
+  }
+}
+
 .advantages__desc {
   @include font-Text-tiny;
   padding-left: 0;
@@ -187,7 +201,7 @@
     }
 
     &--three {
-      padding: 0 31px;
+      padding: 0 32px;
     }
 
     &--grey {
@@ -214,11 +228,23 @@
       padding: 10px 55px;
     }
   }
+
+  &--br {
+    display: inline;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
 }
 
 .advantages__desc--greyOne {
   @media (max-width: $mobile-width-only) {
     margin-bottom: 24px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 37px;
   }
 }
 
@@ -241,8 +267,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 48px;
-    padding-right: 46px;
+    padding-left: 45px;
+    padding-right: 50px;
+    padding-top: 3px;
   }
 }
 
@@ -317,6 +344,12 @@
       width: 76px;
       height: 68px;
       padding-bottom: 23px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--gift {
+      padding-bottom: 20px;
     }
   }
 }

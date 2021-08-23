@@ -42,19 +42,23 @@
   }
 
   &--comments {
-    padding-top: 6px;
-    padding-bottom: 15px;
+    padding-left: 7px;
+    margin-bottom: 10px;
 
     @media (min-width: $tablet-width) {
-      padding-top: 41.5px;
-      padding-bottom: 54.5px;
+      padding-top: 41px;
+      padding-bottom: 54px;
     }
   }
 
   &--present {
+    @media (min-width: $tablet-width) {
+      text-align: start;
+      padding-left: 56px;
+    }
+
     @media (min-width: $desktop-width) {
       padding-left: 79px;
-      text-align: start;
     }
   }
 }
@@ -85,7 +89,7 @@
 }
 
 .form__subtitle--desc {
-  padding-top: 13px;
+  padding-top: 12px;
   padding-bottom: 7px;
   padding-left: 45px;
 
@@ -103,6 +107,11 @@
 
   &--rock {
     padding-top: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 31px;
+    padding-top: 7px;
   }
 }
 
@@ -220,11 +229,15 @@
 
 .form__rating {
   padding-left: 26px;
-  padding-bottom: 4px;
+  margin-bottom: 1px;
 }
 
 .form__rating--park {
-  padding-bottom: 11px;
+  margin-top: 3px;
+}
+
+.form__rating--rock {
+  margin-top: 6px;
 }
 
 .form__button {
@@ -234,7 +247,7 @@
   background-color: $basic-blue;
   border: none;
   padding: 18px 33px 14px 32px;
-  margin: 0 21px 48px 19px;
+  margin: 1px 23px 43px 23px;
   width: 280px;
 
   &:hover {
@@ -332,6 +345,10 @@
   padding: 0 20px 21px 22px;
   align-items: center;
 
+  @media (min-width: $tablet-width) {
+    padding: 1px 54px 19px 58px;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 0 0 20px 79px;
   }
@@ -343,6 +360,10 @@
   padding: 0;
   padding-left: 22px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 1px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 350px;
@@ -428,7 +449,7 @@
       height: 1px;
       width: 123px;
       background: $special-grey-5;
-      top: 65px;
+      top: 49px;
     }
 
     &::before {
@@ -462,8 +483,8 @@
 
 .form__heading--contact {
   @media (min-width: $tablet-width) {
-    padding-top: 52.5px;
-    padding-bottom: 20.5px;
+    padding-top: 38px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -497,8 +518,8 @@
   width: 235px;
   min-height: 160px;
   border: none;
-  padding: 13px 23px 29px 21px;
-  margin: 0 22px 51px 19px;
+  padding: 12px 23px 15px 23px;
+  margin: 0 22px 17px 20px;
 
   @media (min-width: $tablet-width) {
     min-width: 606px;
@@ -544,7 +565,7 @@
 }
 
 .form__lions {
-  padding-bottom: 29px;
+  padding-bottom: 26px;
   padding-left: 28px;
 }
 
@@ -560,4 +581,9 @@
 .form__effect {
   padding-bottom: 12px;
   padding-left: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 18px;
+    padding-left: 22px;
+  }
 }

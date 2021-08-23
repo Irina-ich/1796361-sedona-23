@@ -1,4 +1,13 @@
 .contacts__adv {
   @include font-Heading-small;
   color: $basic-black;
+
+  @media (width: $tablet-width) {
+    padding-left: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 4px;
+  }
 }
+

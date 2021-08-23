@@ -9,6 +9,12 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 14px;
+    padding-top: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 16px;
+    padding-top: 5px;
   }
 
   &--catalog {
@@ -31,6 +37,11 @@
   @media (min-width: $tablet-width) {
     padding-right: 2px;
     padding-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 5px;
+    padding-bottom: 4px;
   }
 }
 

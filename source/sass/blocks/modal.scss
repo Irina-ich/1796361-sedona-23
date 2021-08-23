@@ -23,10 +23,10 @@
 .modal__text {
   @include font-Text-small;
   margin: 0;
-  padding: 35px 15px 22px 15px;
+  padding: 25px 15px 22px;
 
   &--big {
-    padding: 35px 11px 21px 12px;
+    padding: 25px 11px 21px 12px;
   }
 }
 
@@ -36,7 +36,7 @@
   padding: 18px 64px 14px 63px;
   background-color: $basic-blue;
   border: none;
-  margin: 22px 70px 35px 70px;
+  margin: 1px 72px 35px;
   width: 180px;
 
   @media (min-width: $tablet-width) {
@@ -44,7 +44,7 @@
   }
 
   &--closed {
-    margin: 20px;
+    margin: 38px 13px 10px 16px;
     width: 280px;
 
     @media (min-width: $tablet-width) {

@@ -73,7 +73,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 52px;
+      padding-top: 56px;
+      padding-right: 4px;
     }
   }
 }
@@ -94,6 +95,11 @@
 
 .page-title__heading--form {
   padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 29px;
+    padding-bottom: 30px;
+  }
 }
 
 .page-title__text {
@@ -113,7 +119,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-bottom: 43px;
+      padding-bottom: 41px;
     }
   }
 
@@ -141,7 +147,7 @@
     padding-bottom: 10px;
 
     @media (min-width: $tablet-width) {
-      padding: 0 38px 66px 38px;
+      padding: 2px 38px 60px;
     }
 
     @media (min-width: $desktop-width) {
