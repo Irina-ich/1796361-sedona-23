@@ -32,6 +32,12 @@
       padding-top: 32px;
     }
   }
+
+  &--small {
+    @media (min-width: $desktop-width) {
+      padding-top: 27px;
+    }
+  }
 }
 
 .modal__btn {

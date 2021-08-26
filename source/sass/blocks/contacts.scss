@@ -10,3 +10,9 @@
     padding-left: 4px;
   }
 }
+
+.contacts__adv--catalog {
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+}

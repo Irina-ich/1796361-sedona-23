@@ -173,11 +173,17 @@
 
 .advantages__title--greyOne {
   @media (min-width: $tablet-width) {
-    padding-top: 16px;
+    padding-top: 29px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 9px;
+  }
+}
+
+.advantages__title--greyTwo {
+  @media (min-width: $tablet-width) {
+    margin-top: 12px;
   }
 }
 
@@ -338,6 +344,7 @@
     &--gift {
       width: 64px;
       height: 75px;
+      margin-bottom: 20px;
     }
 
     &--burger {
@@ -354,13 +361,19 @@
   }
 }
 
+.advantages__item--three {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
 .advantages__number {
   margin: 0;
   padding-top: 10px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 14px;
-    padding-bottom: 21px;
+    padding-top: 11px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
