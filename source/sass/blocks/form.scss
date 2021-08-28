@@ -229,11 +229,18 @@
 
 .form__rating {
   padding-left: 26px;
-  margin-bottom: 1px;
+  margin-bottom: 10px;
 
   @media (min-width: $desktop-width) {
     padding-left: 18px;
     margin-bottom: 4px;
+  }
+}
+
+.form__rating--lions {
+  @media (min-width: $desktop-width) {
+    padding-left: 26px;
+    margin-bottom: 5px;
   }
 }
 
@@ -626,6 +633,11 @@
 }
 
 .form__wrap {
+  @media (max-width: $mobile-width-only) {
+    padding-left: 23px;
+    padding-bottom: 18px;
+  }
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -640,6 +652,8 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 960px;
     margin-right: 0;
+    gap: 19px 113px;
+    margin-left: 121px;
   }
 }
 
@@ -654,6 +668,12 @@
   @media (min-width: $tablet-width) {
     margin-top: 20px;
     margin-left: 5px;
+  }
+}
+
+.form__lions {
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 11px;
   }
 }
 

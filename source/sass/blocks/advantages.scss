@@ -46,6 +46,13 @@
   }
 }
 
+.advantages__list--grey {
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+    padding-top: 33px;
+  }
+}
+
 .advantages__item {
   @media (min-width: $tablet-width) {
     width: 256px;
@@ -58,7 +65,7 @@
 
 .advantages__item--greyTwo {
   @media (min-width: $tablet-width) {
-    padding-top: 19px;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -173,17 +180,23 @@
 
 .advantages__title--greyOne {
   @media (min-width: $tablet-width) {
-    padding-top: 29px;
+    padding-bottom: 9px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 9px;
+    margin-top: 2px;
   }
 }
 
 .advantages__title--greyTwo {
   @media (min-width: $tablet-width) {
-    margin-top: 12px;
+    margin-top: 0;
+  }
+}
+
+.advantages__title--gift {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
   }
 }
 
@@ -233,6 +246,10 @@
     &--grey {
       padding: 10px 55px;
     }
+
+    &--three {
+      display: block;
+    }
   }
 
   &--br {
@@ -241,6 +258,13 @@
     @media (min-width: $desktop-width) {
       display: block;
     }
+  }
+}
+
+.advantages__desc--three span {
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-bottom: 15px;
   }
 }
 
@@ -257,6 +281,12 @@
 .advantages__desc--grey-small {
   @media (max-width: $mobile-width-only) {
     margin-bottom: 24px;
+  }
+}
+
+.advantages__desc--grey-small span {
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
@@ -304,7 +334,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 20px;
+    padding-bottom: 11px;
   }
 
   @media (min-width: $tablet-width) {
@@ -357,6 +387,15 @@
   @media (min-width: $desktop-width) {
     &--gift {
       padding-bottom: 20px;
+      margin-bottom: 0;
+    }
+
+    &--house {
+      padding-bottom: 19px;
+    }
+
+    &--burger {
+      padding-bottom: 18px;
     }
   }
 }
@@ -365,6 +404,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .advantages__number {
@@ -372,12 +415,18 @@
   padding-top: 10px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 11px;
-    margin-bottom: 25px;
+    padding-top: 12px;
+    margin-bottom: 22px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 12px;
+  }
+}
+
+.advantages__number--grey {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
   }
 }
 
