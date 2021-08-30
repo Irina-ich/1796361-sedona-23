@@ -252,6 +252,13 @@
   }
 }
 
+.advantages__desc--blue-two {
+  @media (min-width: $desktop-width) {
+    max-width: 234px;
+    margin: 28px auto 0;
+  }
+}
+
 .advantages__desc--three span {
   @media (min-width: $desktop-width) {
     display: block;
