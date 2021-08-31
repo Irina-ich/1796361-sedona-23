@@ -9,11 +9,29 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 14px;
+    padding-top: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 16px;
+    padding-top: 5px;
   }
 
   &--catalog {
     @media (min-width: $desktop-width) {
-      padding-top: 2px;
+      padding-top: 4px;
+    }
+  }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      padding-right: 16px;
+      padding-top: 13px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 13px;
+      padding-top: 20px;
     }
   }
 }
@@ -32,10 +50,21 @@
     padding-right: 2px;
     padding-bottom: 5px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 5px;
+    padding-bottom: 4px;
+  }
 }
 
 .copyright__link--catalog {
   @media (min-width: $tablet-width) {
     padding-bottom: 9px;
+  }
+}
+
+.copyright__link--form {
+  @media (min-width: $tablet-width) {
+    margin-top: 12px;
   }
 }

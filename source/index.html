@@ -10,6 +10,10 @@
     <link href="img/favicon/32.svg" rel="icon" type="image/svg+xml">
     <link href="img/favicon/apple-icon-180x180.png" rel="apple-touch-icon">
     <link href="manifest.webmanifest" rel="manifest">
+    <link rel="preload" href="fonts/ptsans.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
   <body class="page-body">
     <header class="page-header">
@@ -28,7 +32,7 @@
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
                   <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-                  <img class="main-nav__logotype" src="img/logotype-mobile.svg" width="101.7" height="59.1" alt="Логотип Седона">
+                  <img class="main-nav__logotype" src="img/logotype-mobile.svg" width="102" height="59" alt="Логотип Седона">
                 </picture>
               </a>
             </li>
@@ -59,8 +63,8 @@
           <div class="advantages__inner">
             <div class="advantages__box">
               <h3 class="advantages__title advantages__title--blue">Настоящий городок</h3>
-              <p class="advantages__number">—№1—</p>
-              <p class="advantages__desc advantages__desc--blue">Седона не атракцион для туристов, там течёт своя жизнь</p>
+              <p class="advantages__number">— №1 —</p>
+              <p class="advantages__desc advantages__desc--blue">Седона не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-city-dekstop.webp 1x, img/photo-city-dekstop@2x.png 2x">
@@ -83,56 +87,54 @@
               <svg class="advantages__icon advantages__icon--gift" aria-hidden="true" focusable="false" width="32" height="38" viewbox="0 0 32 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#icon-gift"></use>
               </svg>
-              <h3 class="advantages__title advantages__title">Сувениры</h3>
-              <p class="advantages__desc advantages__desc--white advantages__desc--three">Не только китайского, но и местного производства!</p>
+              <h3 class="advantages__title advantages__title--gift">Сувениры</h3>
+              <p class="advantages__desc advantages__desc--white advantages__desc--three">Не только китайского,<span> но и местного производства!</span></p>
             </li>
             <li class="advantages__item advantages__item--white">
               <svg class="advantages__icon advantages__icon--burger" aria-hidden="true" focusable="false" width="40" height="35" viewbox="0 0 40 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#icon-burger"></use>
               </svg>
               <h3 class="advantages__title">Еда</h3>
-              <p class="advantages__desc advantages__desc--white advantages__desc--two">Всегда заказывайте фирменный&nbsp;бургер, вы не разочаруетесь!</p>
+              <p class="advantages__desc advantages__desc--white advantages__desc--two">Всегда заказывайте фирменный бургер, вы&nbsp;не разочаруетесь!</p>
             </li>
           </ul>
           <div class="advantages__inner advantages__inner--blue">
             <div class="advantages__box advantages__box--small">
               <h3 class="advantages__title advantages__title--blue advantages__title--blueTwo">Там есть мост&nbsp;дьявола</h3>
-              <p class="advantages__number">—№2—</p>
+              <p class="advantages__number">— №2 —</p>
               <p class="advantages__desc advantages__desc--blue advantages__desc--blue-two">Да, по нему можно пройти! Eсли вы осмелитесь, конечно</p>
             </div>
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-bridge@.webp 1x, img/photo-bridge@2x.webps 2x">
+              <source type="image/webp" srcset="img/photo-bridge@.webp 1x, img/photo-bridge@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.png 1x, img/photo-bridge-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.png 1x, img/photo-bridge-tablet@2x.png 2x">
               <img class="advantages__photo advantages__photo--two" src="img/photo-bridge@.png" srcset="img/photo-bridge@2x.png 2x" alt="Фото моста"/>
             </picture>
           </div>
-          <div class="advantages__inner advantages__inner--grey">
-            <ul class="advantages__list">
-              <li class="advantages__item advantages__item--grey">
-                <h3 class="advantages__title advantages__title--grey advantages__title--greyOne">Небольшая площадь</h3>
-                <p class="advantages__number">— №3 —</p>
-                <p class="advantages__desc advantages__desc--grey advantages__desc--greyOne">Все интересные места находятся очень близко</p>
-              </li>
-              <li class="advantages__item advantages__item--grey">
-                <h3 class="advantages__title advantages__title--grey">Красивая дорога</h3>
-                <p class="advantages__number">— №4 —</p>
-                <p class="advantages__desc advantages__desc--grey advantages__desc--grey-small">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
-              </li>
-              <li class="advantages__item advantages__item--grey advantages__item--greyTwo">
-                <h3 class="advantages__title advantages__title--grey">Мало туристов</h3>
-                <p class="advantages__number">— №5 —</p>
-                <p class="advantages__desc advantages__desc--grey advantages__desc--greyThree">Большинство едет в гранд каньон и толпится там</p>
-              </li>
-            </ul>
-          </div>
+          <ul class="advantages__list advantages__list--grey">
+            <li class="advantages__item advantages__item--grey">
+              <h3 class="advantages__title advantages__title--grey">Небольшая площадь</h3>
+              <p class="advantages__number advantages__number--grey">— №3 —</p>
+              <p class="advantages__desc advantages__desc--grey">Все интересные места находятся очень близко</p>
+            </li>
+            <li class="advantages__item advantages__item--grey">
+              <h3 class="advantages__title advantages__title--grey">Красивая дорога</h3>
+              <p class="advantages__number advantages__number--grey">— №4 —</p>
+              <p class="advantages__desc advantages__desc--grey">Ехать в Седону из Лас&#8209;Вегаса совсем не&nbsp;скучно!</p>
+            </li>
+            <li class="advantages__item advantages__item--grey">
+              <h3 class="advantages__title advantages__title--grey">Мало туристов</h3>
+              <p class="advantages__number advantages__number--grey">— №5 —</p>
+              <p class="advantages__desc advantages__desc--grey">Большинство едет в Гранд каньон и толпится там</p>
+            </li>
+          </ul>
       </section>
       <section class="search">
         <div class="search__inner">
           <h2 class="search__title">Заинтересовались?</h2>
-          <p class="search__info">Укажите предполагаемые даты поездки,<span class="search__info--br"> и мы покажем вам лучшие предложения гостиниц в Седоне</span></p>
+          <p class="search__info">Укажите предполагаемые даты поездки,<span class="search__info search__info--br"> и мы покажем вам лучшие предложения гостиниц в Седоне</span></p>
         </div>
         <a class="search__link" href="blank.html">Найти гостиницу</a>
       </section>

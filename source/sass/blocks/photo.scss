@@ -1,4 +1,5 @@
-.photo__list {
+.photo__list,
+.photo__wrapper {
   @include reset-list;
 }
 
@@ -167,5 +168,9 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 7px;
   }
 }
