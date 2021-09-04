@@ -71,6 +71,7 @@
   width: 100%;
   background-image: url("../img/video.jpg");
   height: 201px;
+  background-color: $special-grey-3;
 
   @media (min-width: $tablet-width) {
     height: 500px;
