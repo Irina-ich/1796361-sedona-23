@@ -408,8 +408,8 @@
 }
 
 .form__icon--tel {
-  padding: 20px;
-  top: 72%;
+  padding: 21px;
+  top: 70%;
 
   @media (min-width: $tablet-width) {
     right: 60px;
@@ -418,21 +418,30 @@
   @media (min-width: $desktop-width) {
     right: 0;
     top: 50%;
+    padding-top: 20px;
+    padding-right: 22px;
+    padding-bottom: 21px;
+    padding-left: 22px;
   }
 }
 
 .form__icon--email {
-  padding: 22px 18px;
-  top: 55%;
+  padding-top: 23px;
+  padding-right: 19px;
+  padding-bottom: 25px;
+  padding-left: 18px;
+  top: 56%;
 
   @media (min-width: $tablet-width) {
-    right: 63px;
-    top: 74%;
+    padding: 23px 19px;
+    right: 60px;
+    top: 75%;
   }
 
   @media (min-width: $desktop-width) {
-    right: 3px;
-    top: 47%;
+    right: 0;
+    top: 50%;
+    padding: 23px 24px;
   }
 }
 
